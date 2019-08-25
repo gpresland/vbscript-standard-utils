@@ -1,0 +1,1 @@
+cscript .\tests\Tests.vbs
