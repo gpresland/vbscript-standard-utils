@@ -238,8 +238,7 @@ Function IsNullOrWhiteSpace(Value)
     IsNullOrWhiteSpace = _
     	IsEmpty(Value) Or _
     	IsNull(Value) Or _
-    	Value Is Nothing Or _
-    	(TypeName Is "String" And Len(Trim(Value)) Is 0)
+    	(TypeName(Value) = "String" And Len(Trim(Value)) = 0)
 End Function
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
