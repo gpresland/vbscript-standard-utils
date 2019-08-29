@@ -28,8 +28,7 @@ End Function
 Public Function IsNil(Value)
     IsNil = _
         IsEmpty(Value) Or _
-        IsNull(Value)' Or _
-        ' Value Is Nothing
+        IsNull(Value)
 End Function
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
